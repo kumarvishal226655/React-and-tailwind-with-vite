@@ -4,10 +4,12 @@ import SignIn from "./pages/SignIn.jsx"
 import SignUp from "./pages/SingUp.jsx"
 import About from "./pages/about.jsx"
 import Profile from "./pages/Profile.jsx"
+import Header from "./componets/Header.jsx"
 
 export default function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
